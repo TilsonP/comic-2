@@ -39,7 +39,7 @@
     width: 50px;
     margin: 0 8px;
     border-radius: 5px;
-    color: $TITLE-INFO;
+    color: $TEXT-COLOR;
     transition: 0.4s;
   }
 
@@ -68,9 +68,9 @@
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Cambia esto según la posición del tooltip */
+    bottom: 125%;
     left: 50%;
-    margin-left: -60px; /* Usa la mitad del ancho del tooltip */
+    margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
   }
