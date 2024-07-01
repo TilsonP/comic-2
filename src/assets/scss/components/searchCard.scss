@@ -1,0 +1,83 @@
+@import '../base/containers';
+@import '../base/variables';
+
+.container-search-card{
+  @extend .container-primary;
+  margin-top: 8px;
+}
+
+.container-search{
+  @extend .container-secondary;
+  height: 35px;
+  align-items: center;
+  justify-content: space-evenly ;
+  color: $INFO-COLOR;
+  border-radius: 5px;
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input{
+    width: 100px;
+    height: 20px;
+  }
+}
+
+.container-buttons {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+
+  button {
+    border: none;
+    background-color: $BG-SECONDARY-COLOR;
+    padding: 3px;
+    height: 40px;
+    width: 50px;
+    margin: 0 8px;
+    border-radius: 5px;
+    color: $TITLE-INFO;
+    transition: 0.4s;
+  }
+
+  button:hover {
+    transition: 0.4s;
+    color: $INFO-COLOR;
+  }
+
+  &__button-icon {
+    height: 34px;
+  }
+
+  &__tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  &__tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Cambia esto según la posición del tooltip */
+    left: 50%;
+    margin-left: -60px; /* Usa la mitad del ancho del tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &__tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+

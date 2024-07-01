@@ -1,0 +1,30 @@
+@import "variables";
+
+.container-primary{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 7px;
+  background-color: $BG-PRIMARY-COLOR;
+}
+
+.container-secondary{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: $BORDER;
+  background-color: $BG-SECONDARY-COLOR;
+}
+
+.container-i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  height: 33px;
+  border-radius: 3px;
+  color: $INFO-COLOR;
+  background-color: $BG-PRIMARY-COLOR;
+}

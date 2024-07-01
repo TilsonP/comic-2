@@ -1,0 +1,41 @@
+@import '../base/containers';
+@import '../base/variables';
+
+.container-image-card {
+  @extend .container-primary;
+  width: 600px;
+}
+
+.container-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 46px;
+  border-radius: 5px 5px 0 0;
+  background: rgb(42,71,96);
+  background: linear-gradient(180deg, rgba(42,71,96,1) 0%, rgba(80,114,143,1) 100%);
+
+  &__info-type{
+    @extend .container-i;
+    width: 72px;
+    font-weight: 800;
+    font-size: 16px;
+  }
+
+  &__title{
+    color: $TEXT-COLOR;
+    font-size: 25px;
+    margin-top: 3px;
+  }
+}
+
+.container-image{
+  @extend .container-secondary;
+  margin-top: 4px;
+  width: 600px;
+
+  img{
+    width: 594px;
+  }
+
+}

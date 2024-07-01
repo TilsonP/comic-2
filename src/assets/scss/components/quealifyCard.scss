@@ -1,0 +1,40 @@
+@import '../base/containers';
+@import '../base/variables';
+
+.container-qualify {
+  @extend .container-primary;
+  width: 325px;
+  margin-top: 8px;
+  flex-direction: row;
+  justify-content: space-around;
+
+  &__rating {
+    @extend .container-secondary;
+    justify-content: center;
+    padding: 3px 0;
+    border-radius: 5px;
+    font-size: 0;
+    direction: rtl;
+
+    label {
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+
+      img {
+        width: 45px;
+        height: 45px;
+        fill: #ccc;
+        filter: grayscale(100%);
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    label:hover img, label:hover ~ label img, input[type="radio"]:checked ~ label img {
+      filter: brightness(100%);
+    }
+  }
+}

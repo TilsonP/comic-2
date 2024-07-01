@@ -1,0 +1,50 @@
+@import '../base/containers';
+@import '../base/variables';
+
+.container-info-card{
+  @extend .container-primary;
+  width: 325px;
+
+  &__header{
+    @extend .container-secondary;
+    height: 46px;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    color: $INFO-COLOR;
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  &__icon{
+    @extend .container-i;
+    width: 33px;
+  }
+
+  &__info{
+    @extend .container-secondary;
+    position: relative;
+    margin-top: 4px;
+    border-radius: 0 0 5px 5px;
+    overflow: auto;
+    overflow-x: hidden;
+
+    table{
+      margin: 8px;
+      height: 50px;
+
+      th{
+        color: $TITLE-INFO;
+        text-align: left;
+      }
+
+      td{
+        color: $TEXT-COLOR;
+      }
+    }
+  }
+
+  &__transcript-content {
+    max-height: 300px; /* Altura máxima del contenido */
+    overflow-y: auto; /* Habilita el scroll vertical cuando se excede la altura máxima */
+  }
+}
